@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+.container {
+  max-width: 630px;
+  display: grid;
+  margin: 0 10px;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "i i"
+    "s a";
+}
+.info-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px;
+  grid-area: i;
+  background-color: #fff;
+}
+.sign-up-card {
+  padding: 30px;
+  grid-area: s;
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+}
+.about {
+  padding: 30px;
+  grid-area: a;
+  background-color: hsl(179, 62%, 53%);
+  border-bottom-right-radius: 10px;
+}
+.info-card h3 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin: 0;
+  font-size: 24px;
+}
+.info-card .money-back {
+  color: hsl(71, 73%, 54%);
+}
+.info-card p:last-of-type {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.8;
+}
+.sign-up-card h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.sign-up-card span:first-of-type {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 10px;
+}
+.sign-up-card span:last-of-type {
+  color: hsl(204, 43%, 73%);
+}
+.sign-up-card p {
+  color: #fff;
+}
+.sign-up-card button {
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.about > h3 {
+  color: #fff;
+}
+.about p {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.5;
+  max-width: 230px;
+}
+@media (max-width: 23.5em) {
+  .container {
+    grid-template-areas:
+      "i"
+      "s"
+      "a";
+  }
+  .sign-up-card {
+    border-bottom-left-radius: 0px;
+  }
+  .about {
+    border-bottom-left-radius: 10px;
+  }
+}
+@media (max-width: 33em) {
+  .container {
+    grid-template-areas:
+      "i"
+      "s"
+      "a";
+  }
+  .sign-up-card {
+    border-bottom-left-radius: 0px;
+  }
+  .about {
+    border-bottom-left-radius: 10px;
+  }
+}
+@media (max-width: 40em) {
+  .container {
+    grid-template-areas:
+      "i"
+      "s"
+      "a";
+  }
+  .sign-up-card {
+    border-bottom-left-radius: 0px;
+  }
+  .about {
+    border-bottom-left-radius: 10px;
+  }
+}
